@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YOLO Vision API</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div><span class="tag">COMPUTER VISION / REST API</span><h1>Detection<br />Workbench</h1></div>
+        <p>Upload an image or video. Inspect every detection, confidence score, bounding box, and runtime metric.</p>
+      </header>
+      <section class="grid">
+        <div class="card controls">
+          <h2>01 / Input</h2>
+          <div class="tabs">
+            <button class="active" data-mode="image">Image</button>
+            <button data-mode="video">Video</button>
+          </div>
+          <label class="drop">
+            <input id="file" type="file" accept="image/*" />
+            <strong id="file-label">Drop an image or browse</strong>
+            <small>JPEG, PNG, WEBP or supported video · max 50 MB</small>
+          </label>
+          <button id="run" class="run" disabled>Run detection →</button>
+          <p id="message"></p>
+        </div>
+        <div class="card preview">
+          <div class="card-head"><h2>02 / Preview</h2><span id="model">YOLO26N</span></div>
+          <div class="canvas-wrap"><canvas id="canvas"></canvas><video id="video" controls></video><div id="placeholder">Waiting for media</div></div>
+        </div>
+      </section>
+      <section class="card results">
+        <div class="card-head"><h2>03 / Results</h2><span id="count">0 detections</span></div>
+        <div class="metrics" id="metrics"></div>
+        <pre id="json">Run a detection to inspect the API response.</pre>
+      </section>
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
