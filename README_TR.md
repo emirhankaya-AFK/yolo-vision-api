@@ -47,6 +47,8 @@ pytest -q
 
 ## Sonraki adımlar
 
+Etiketli validation split üzerinden mAP50-95 ve sınıf bazlı precision/recall raporlanmalıdır. Servisteki confidence ve FPS operasyon metrikleridir; doğruluk iddiası değildir. Demo görseli, kısa ekran kaydı/GIF için başlangıç noktasıdır.
+
 - Uzun videolar için arka plan iş kuyruğu
 - İşlenmiş çıktıların S3 uyumlu depolamaya yazılması
 - API anahtarı, rate limit ve Prometheus metrikleri
