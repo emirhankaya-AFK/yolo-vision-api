@@ -2,6 +2,12 @@
 
 [English](README.md) | [Türkçe](README_TR.md)
 
+![Demo](docs/demo.svg)
+
+## Portföy demosu
+
+Görsel veya video yükleyip tespit endpoint'ini çağırabilir; JSON sonuçları, gecikme ve güven metriklerini inceleyebilirsin. Arayüz ve örnek istek kısa ekran kaydı/GIF için hazırdır.
+
 Ultralytics YOLO modelini tip güvenli REST uçları üzerinden sunan, görsel ve video kabul eden production-style FastAPI servisidir. Sınıf, güven skoru, koordinatlar ve hız metrikleri döndürür; tarayıcı arayüzünde sonuç kutularını gösterir.
 
 ## Özellikler

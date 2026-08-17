@@ -2,6 +2,12 @@
 
 [English](README.md) | [Türkçe](README_TR.md)
 
+![Demo](docs/demo.svg)
+
+## Portfolio demo
+
+Upload an image or video, call the detection endpoint, and inspect JSON detections, latency and confidence metrics. The UI and sample request are designed for a short screen recording or GIF.
+
 A production-style FastAPI service that exposes Ultralytics YOLO image and video inference through typed REST endpoints. It returns bounding boxes, class labels, confidence statistics, and latency/throughput metrics, with a responsive browser workbench for visual testing.
 
 ## Features
