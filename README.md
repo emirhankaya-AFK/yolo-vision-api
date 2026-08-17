@@ -26,6 +26,8 @@ A production-style FastAPI service that exposes Ultralytics YOLO image and video
 
 ## API
 
+![Architecture](docs/demo.svg)
+
 | Method | Endpoint | Description |
 |---|---|---|
 | `GET` | `/health` | Service and configured model status |
@@ -74,6 +76,8 @@ pytest -q
 ```
 
 Tests use a fake detector, so CI validates the API contract without downloading model weights or PyTorch.
+
+For hiring review, report dataset-level mAP50-95 and class-wise precision/recall from a labeled validation split. Runtime confidence and FPS in this service are operational metrics, not accuracy claims.
 
 ## Production roadmap
 
